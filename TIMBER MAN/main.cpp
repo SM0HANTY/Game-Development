@@ -25,19 +25,19 @@ int main()
     window.setView(view);
 
     Texture textureBackground;
-    textureBackground.loadFromFile("/home/sudhruti/Documents/GameDev/objects/background.png");
+    textureBackground.loadFromFile("objects/background.png");
     Sprite spriteBackground;
     spriteBackground.setTexture(textureBackground);
     spriteBackground.setPosition(0, 0);
 
     Texture texturetree;
-    texturetree.loadFromFile("/home/sudhruti/Documents/GameDev/objects/tree.png");
+    texturetree.loadFromFile("objects/tree.png");
     Sprite spriteTree;
     spriteTree.setTexture(texturetree);
     spriteTree.setPosition(810, 0);
 
     Texture textureBee;
-    textureBee.loadFromFile("/home/sudhruti/Documents/GameDev/objects/bee.png");
+    textureBee.loadFromFile("objects/bee.png");
     Sprite spriteBee;
     spriteBee.setTexture(textureBee);
     spriteBee.setPosition(0, 800);
@@ -45,7 +45,7 @@ int main()
     float beeSpeed = 0.0f;
 
     Texture textureCloud;
-    textureCloud.loadFromFile("/home/sudhruti/Documents/GameDev/objects/cloud.png");
+    textureCloud.loadFromFile("objects/cloud.png");
     Sprite spriteCloud1, spriteCloud2, spriteCloud3;
     spriteCloud1.setTexture(textureCloud);
     spriteCloud2.setTexture(textureCloud);
@@ -63,7 +63,7 @@ int main()
 
     // Prepare the player
     Texture texturePlayer;
-    texturePlayer.loadFromFile("/home/sudhruti/Documents/GameDev/objects/player.png");
+    texturePlayer.loadFromFile("objects/player.png");
     Sprite spritePlayer;
     spritePlayer.setTexture(texturePlayer);
     spritePlayer.setPosition(580, 720);
@@ -73,14 +73,14 @@ int main()
 
     // Prepare the gravestone
     Texture textureRIP;
-    textureRIP.loadFromFile("/home/sudhruti/Documents/GameDev/objects/rip.png");
+    textureRIP.loadFromFile("objects/rip.png");
     Sprite spriteRIP;
     spriteRIP.setTexture(textureRIP);
     spriteRIP.setPosition(600, 860);
 
     // Prepare the axe
     Texture textureAxe;
-    textureAxe.loadFromFile("/home/sudhruti/Documents/GameDev/objects/axe.png");
+    textureAxe.loadFromFile("objects/axe.png");
     Sprite spriteAxe;
     spriteAxe.setTexture(textureAxe);
     spriteAxe.setPosition(700, 830);
@@ -91,7 +91,7 @@ int main()
 
     // Prepare the flying log
     Texture textureLog;
-    textureLog.loadFromFile("/home/sudhruti/Documents/GameDev/objects/log.png");
+    textureLog.loadFromFile("objects/log.png");
     Sprite spriteLog;
     spriteLog.setTexture(textureLog);
     spriteLog.setPosition(810, 720);
@@ -120,7 +120,7 @@ int main()
     Text scoreText;
 
     Font font;
-    font.loadFromFile("/home/sudhruti/Documents/GameDev/font/KOMIKAP_.ttf");
+    font.loadFromFile("KOMIKAP_.ttf");
     messageText.setFont(font);
     scoreText.setFont(font);
     messageText.setString("Please Enter to start!");
@@ -139,7 +139,7 @@ int main()
     scoreText.setPosition(20, 20);
 
     Texture textureBranch;
-    textureBranch.loadFromFile("/home/sudhruti/Documents/GameDev/objects/branch.png");
+    textureBranch.loadFromFile("objects/branch.png");
     for (int i = 0; i < NUM_BRANCHES; i++)
     {
         branches[i].setTexture(textureBranch);
@@ -149,13 +149,13 @@ int main()
 
 
     SoundBuffer chopBuffer;
-    chopBuffer.loadFromFile("/home/sudhruti/Documents/GameDev/sounds/chop.wav");
+    chopBuffer.loadFromFile("sounds/chop.wav");
     Sound chop;
     chop.setBuffer(chopBuffer);
 
 
     SoundBuffer deathBuffer;
-    deathBuffer.loadFromFile("/home/sudhruti/Documents/GameDev/sounds/death.wav");
+    deathBuffer.loadFromFile("sounds/death.wav");
     Sound death;
     death.setBuffer(deathBuffer);
 
@@ -164,7 +164,7 @@ int main()
     // Out of time
 
     SoundBuffer ootBuffer;
-    ootBuffer.loadFromFile("/home/sudhruti/Documents/GameDev/sounds/out_of_time.wav");
+    ootBuffer.loadFromFile("sounds/out_of_time.wav");
     Sound outOfTime;
     outOfTime.setBuffer(ootBuffer);
     updateBranches(1);
